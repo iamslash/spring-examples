@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring.output.ansi.enabled: ALWAYS
+iamslash.name: davidsun
+
+elasticsearch.clustername: my-es
+elasticsearch.host: localhost
+elasticsearch.port: 9300
