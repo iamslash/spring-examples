@@ -13,8 +13,10 @@ public class Posts {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
   @Column(length = 450, nullable = false)
   private String title;
+
   @Column(columnDefinition = "TEXT", nullable = false)
   private String content;
   private String author;
