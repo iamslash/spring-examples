@@ -6,6 +6,11 @@ This is an Spring boot application with postgresql.
 
 * [spring postgres @ TIL](https://github.com/iamslash/TIL/blob/master/spring/SpringBoot.md)
 
+# Code style 
+
+* [google-java-format plugin](https://gerrit.cloudera.org/Documentation/dev-intellij.html#_google_java_format_plugin)
+* [Code style settings](https://gerrit.cloudera.org/Documentation/dev-intellij.html#_code_style_settings)
+
 # How to run postgresql with docker
 
 ```console
