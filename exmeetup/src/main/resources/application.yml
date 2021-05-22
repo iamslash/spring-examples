@@ -3,3 +3,8 @@ server:
 
 spring.output.ansi.enabled: ALWAYS
 iamslash.name: davidsun
+
+#spring.datasource.hikari.maximum-pool-size: 4
+#spring.datasource.url: jdbc:postgresql://localhost:5432/exmeetup?userSSL=false
+#spring.datasource.username: iamslash
+#spring.datasource.password: 1
