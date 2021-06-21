@@ -26,5 +26,4 @@ public interface ItemRepository extends ReactiveCrudRepository<Item, String> {
   Flux<Item> findByNameContainingOrDescriptionContainingAllIgnoreCase(String partialName, String partialDesc);
 
   Flux<Item> findAll(Example<Item> probe);
-  // end::code-3[]
 }

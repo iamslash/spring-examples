@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8" />
-  <title>Hacking with Spring Boot - Getting Started</title>
+  <title>WebFlux with MongoDB</title>
 </head>
 <body>
 <h1>Welcome to Hacking with Spring Boot!</h1>
@@ -28,7 +28,7 @@
       </form>
     </td>
     <td>
-      <form th:method="delete" th:action="@{'/delete/' + ${item.id}}">
+      <form th:method="post" th:action="@{'/delete/' + ${item.id}}">
         <input type="submit" value="Delete"/>
       </form>
     </td>
