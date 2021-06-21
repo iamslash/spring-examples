@@ -19,7 +19,8 @@ class CartService {
   }
 
   Mono<Cart> addToCart(String cartId, String id) {
-    return this.cartRepository.findById(cartId) //
+    return this.cartRepository
+        .findById(cartId) //
         .defaultIfEmpty(new Cart(cartId)) //
         .flatMap(cart -> cart.getCartItems().stream() //
             .filter(cartItem -> cartItem.getItem().getId().equals(id)) //
@@ -27,7 +28,8 @@ class CartService {
             .map(cartItem -> {
               cartItem.increment();
               return Mono.just(cart);
-            }).orElseGet(() -> {
+            })
+            .orElseGet(() -> {
               return this.itemRepository.findById(id) //
                   .map(CartItem::new) // <4>
                   .doOnNext(cartItem -> cart.getCartItems().add(cartItem)) //
